@@ -5,9 +5,9 @@
 // 2 -> "-2, -1, 0, 1, 2"
 
 Console.Write("Введите целое число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int first = -N;
-while (first <= N)
+int number = Convert.ToInt32(Console.ReadLine());
+int first = -number;
+while (first <= number)
 {
     Console.Write($"{first} ");
     first++;
