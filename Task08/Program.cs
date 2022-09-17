@@ -16,7 +16,8 @@ while (counter <= number)
 {
     if (counter % 2 == 0)
     {
-        Console.Write($"{counter} ");
+        Console.Write($"{counter}, ");
     }
     counter++;
 }
+Console.Write("\b\b");
