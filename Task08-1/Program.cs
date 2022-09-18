@@ -4,9 +4,9 @@ Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int counter = 2;
 
-if (number < 0)
+
 {
-    number = - number;
+    number = -number;
 }
 while (counter <= number)
 {
@@ -16,3 +16,4 @@ while (counter <= number)
     }
     counter++;
 }
+Console.Write("\b" + "\b");
