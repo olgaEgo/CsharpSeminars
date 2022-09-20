@@ -19,10 +19,7 @@ else
     }
 
     bool isWeekend = Weekend(number);
-
-Console.WriteLine($"{number} -> {(isWeekend ? "да" : "нет")}");
+    Console.WriteLine($"{number} -> {(isWeekend ? "да" : "нет")}");
 }
 
-// if (result) Console.WriteLine($"{number} -> нет");
-// else Console.WriteLine($"{number} -> да");
 
