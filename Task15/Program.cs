@@ -4,14 +4,25 @@
 // 7 -> да
 // 1 -> нет
 
-Console.Write("Введите цифру от 1 до 7 включительно% ");
+Console.Write("Введите цифру от 1 до 7 включительно: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-bool Weekend(int num1)
+if (number > 7 || number < 1)
 {
-    return num1 < 6;
+    Console.WriteLine("Неверная цифра");
+}
+else
+{
+    bool Weekend(int num1)
+    {
+        return num1 >= 6;
+    }
+
+    bool isWeekend = Weekend(number);
+
+Console.WriteLine($"{number} -> {(isWeekend ? "да" : "нет")}");
 }
 
-bool result = Weekend(number);
-if (result) Console.WriteLine($"{number} -> нет");
-else Console.Write($"{number} -> да");
+// if (result) Console.WriteLine($"{number} -> нет");
+// else Console.WriteLine($"{number} -> да");
+
