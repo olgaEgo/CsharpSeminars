@@ -38,3 +38,25 @@ int number = new Random().Next(10, 100);
 int maxDigit = MaxDigit (number);
 string result = maxDigit > 0 ? maxDigit.ToString() : "Цифры равны";
 Console.WriteLine($"Наибольшая цифра числа {number} = {result}");
+
+
+void Zadacha9()
+{
+    Random random = new Random();
+    int number = random.Next(10,100);
+    int firstDigit = number / 10;
+    int secondDigit =  number % 10;
+    // Console.WriteLine(firstDigit);
+    // Console.WriteLine(secondDigit);
+
+    if (firstDigit > secondDigit)
+{
+    Console.WriteLine($"max {number} = {firstDigit}");
+}
+else
+{
+    Console.WriteLine($"max = {number} {secondDigit}");
+}
+}
+
+Zadacha9();
