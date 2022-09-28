@@ -8,12 +8,15 @@
 Console.Write("Введите пятизначное число: ");
 int input = Convert.ToInt32(Console.ReadLine());
 
-string IsPalindrom(int n)
+
+bool IsPalindrom(int n)
 {
-    if ((n % 10 == n / 10000) && ((n % 100) / 10 == (n / 1000) % 10))
-    return $"{n} -> да";
-    return $"{n} -> нет";
+    return (n % 10 == n / 10000) && ((n % 100) / 10 == (n / 1000) % 10);
 }
 
-string isPalindrom = IsPalindrom(input);
-Console.WriteLine(isPalindrom);
+bool isPalindrom = IsPalindrom(input);
+if (isPalindrom)
+{
+    Console.WriteLine($"{input} -> да");
+}
+else Console.WriteLine($"{input} -> нет");
