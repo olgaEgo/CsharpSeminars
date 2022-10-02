@@ -54,7 +54,7 @@ double NumberPow(double numberA, double numberB)
 // int NumberPow(int numberA, int numberB)
 // {
 //     int result = 1;
-//     for (int pow = 1; pow <= numberB; pow++)
+//     for (int degree = 1; degree <= numberB; degree++)
 //     {
 //         result *= numberA;
 //     }

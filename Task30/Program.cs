@@ -3,7 +3,6 @@
 // нулями и единицами в случайном порядке.
 // [1,0,1,1,0,1,0,0]
 
-
 int[] arrayNew = new int[8];
 GetArray(arrayNew);
 PrintArray(arrayNew);
@@ -17,6 +16,7 @@ void GetArray(int[] array)
         array[i] = rnd.Next(0, 2);
     }
 }
+
 void PrintArray(int[] arr)
 {
     int count = arr.Length;
