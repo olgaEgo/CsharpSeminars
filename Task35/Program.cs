@@ -47,7 +47,7 @@ int QuantityElemInRange (int[] array, int min, int max)
     return counter;
 }
 
-int[] arr = CreateArrayRndInt(10, 0, 100);
+int[] arr = CreateArrayRndInt(123, 0, 100);
 PrintArray(arr);
 int quantityElemInRange = QuantityElemInRange (arr, 10, 99);
 Console.WriteLine(quantityElemInRange);

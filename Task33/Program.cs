@@ -32,24 +32,48 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
-bool CheckNumberInArray(int[] array, int num)
+// bool CheckNumberInArray(int[] array, int num)
+// {
+// bool result = false;
+// for (int i = 0; !result && i < array.Length; i++)
+// {
+//     if (array[i] == num)
+//     {
+//         result = true;
+//     }
+// }
+// return result;
+// }
+
+// int[] arr = CreateArrayRndInt(12, -9, 9);
+// PrintArray(arr);
+// Console.WriteLine("Введите число для проверки его наличия в массиве: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// // if (CheckNumberInArray(arr, number)) Console.WriteLine("Да");
+// // else Console.WriteLine("Нет");
+// string answer = CheckNumberInArray(arr, number) ? "Да" : "Нет";
+// Console.WriteLine(answer);  
+
+void CheckNumberInArray(int[] array, int num)
 {
     bool result = false;
-    for (int i = 0; !result && i < array.Length; i++)
+    int i = 0;
+    while (!result && i < array.Length)
     {
         if (array[i] == num)
         {
             result = true;
         }
+        i++;
     }
-    return result;
+if(result)
+System.Console.WriteLine($"Число {num} находится в массиве");
+else
+System.Console.WriteLine($"Число {num} не находится в массиве");
 }
 
 int[] arr = CreateArrayRndInt(12, -9, 9);
-PrintArray(arr);
-Console.WriteLine("Введите число для проверки его наличия в массиве: ");
+Console.Write("Введите число для проверки его наличия в массиве: ");
 int number = Convert.ToInt32(Console.ReadLine());
-// if (CheckNumberInArray(arr, number)) Console.WriteLine("Да");
-// else Console.WriteLine("Нет");
-string answer = CheckNumberInArray(arr, number) ? "Да" : "Нет";
-Console.WriteLine(answer);
+PrintArray(arr);
+CheckNumberInArray(arr, number);
