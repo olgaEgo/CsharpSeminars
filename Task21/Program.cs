@@ -23,6 +23,10 @@ double Distance(int argX1, int argY1, int argZ1, int argX2, int argY2, int argZ2
     double result = Math.Sqrt(Math.Pow((argX2 - argX1), 2) + Math.Pow((argY2 - argY1), 2) + Math.Pow((argZ2 - argZ1), 2));
     return result;
 }
-
+// double Distance(double argX1, double argY1, double argZ1, double argX2, double argY2, double argZ2)
+// {
+//     double result = Math.Sqrt(Math.Pow((argX2 - argX1), 2) + Math.Pow((argY2 - argY1), 2) + Math.Pow((argZ2 - argZ1), 2));
+//     return result;
+// }
 double length = Math.Round(Distance(x1, y1, z1, x2, y2, z2), 2, MidpointRounding.ToZero);
 Console.WriteLine(length);
